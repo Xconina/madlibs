@@ -1,9 +1,19 @@
-import time
-print("Lets play Madlibs!")
-print("We have 3 different stories to tell.")
-choice = int(input("Would you like story 1 about a weird creature, story 2 about , or story 3 about ? "))
+#This is a madlibs generator with a GUI with Tkinter
+#Using a tkinter tutorial
+#By Ashley Cook
 
-if choice == 1:
+# Set up Tkinter
+from tkinter import *
+root = Tk()
+root.geometry('300x300')
+root.title('Mad Libs Generator')
+Label(root, text = 'Mad Libs Generator \n Have fun!' , font = 'arial 20 bold ', background= 'black', fg = 'white').pack()
+Label(root, text = 'Choose a Story : ', font = 'arial 15 bold', background= 'black', fg = 'white').place(x=40, y= 80)
+root.configure(background ='black')
+#Set up game
+import time
+#Story 1
+def madlib1():
     print("Good choice! Time to add your words to the story!")
     time.sleep(1)
     adj1 = input("Please enter an adjective: ")
@@ -37,8 +47,8 @@ if choice == 1:
     print(".")
     time.sleep(1)
     print(story1)
-
-if choice == 2:
+#Story 2
+def madlib2():
     print("Good choice! Time to add your words to the story!")
     time.sleep(1)
 
@@ -66,8 +76,8 @@ if choice == 2:
     print(".")
     time.sleep(1)
     print(story2)
-
-if choice == 3:
+#Story 3
+def madlib3():
     print("Good choice! Time to add your words to the story!")
     time.sleep(1)
     dogname = input("Please enter a name: ")
@@ -97,5 +107,8 @@ if choice == 3:
     time.sleep(1)
     print(story3)
 
-else:
-    print("That wasn't a choice! No stories for you.")
+#Buttons
+Button(root, text ='Creature Story', font = 'arial 15', command= madlib1, bg = 'green').place(x=60, y=120)
+Button(root, text='Game Night', font ='arial 15', command = madlib2, bg = 'pink').place(x=70, y=180)
+Button(root, text='Bad Dog', font ='arial 15', command = madlib3, bg = 'light blue').place(x=80, y=240)
+root.mainloop()
