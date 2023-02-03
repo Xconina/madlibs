@@ -4,7 +4,7 @@ print("We have 3 different stories to tell.")
 choice = int(input("Would you like story 1 about a weird creature, story 2 about , or story 3 about ? "))
 
 if choice == 1:
-    print("Time to add your words to the story!")
+    print("Good choice! Time to add your words to the story!")
     time.sleep(1)
     adj1 = input("Please enter an adjective: ")
     adj2 = input("Please enter an adjective: ")
@@ -39,10 +39,10 @@ if choice == 1:
     print(story1)
 
 if choice == 2:
-
+    print("")
 
 if choice == 3:
-
+    print("")
 
 else:
     print("That wasn't a choice! No stories for you.")
