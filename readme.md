@@ -1,8 +1,35 @@
-Mad Libs Generator
+# Mad Libs Generator
 
-This Mad Libs has two files. Both files contain 3 different mad lib stories. 
-You will select a story. In the madlibs.py, you will type in a number 1-3 to select a story. 
-In the madlibsgui, you will use a menu with buttons set up with Tkinter to select a story. 
-After choosing a story, you will input nouns, adjectives, verbs, etc. 
-The program will then add these words and display what the story now says. 
-In the madlibsgui.py, you will be able to select additional stories. In the other, you would rerun the program. 
+This Mad Libs has three files. All three files contain the same 3 different mad lib stories. Mad libs are stories that you fill-in-the-blank with random nouns, verbs, adjectives, etc. I have written the stories and formatted the program three different ways to practice different techniques and approaches.
+## Madlibs.py Usage
+```python
+select a story
+
+Prompted to enter a noun, verb, etc
+input word
+
+After complete, program will output story with your words filled in
+```
+
+## Madlibsgui.py Usage
+
+```python
+includes a GUI made with tkinter
+
+use a menu to select story
+
+then continue same as first program.
+
+#You are able to select more stories after finishing one
+```
+## Madlibsdict.py
+
+```python
+This is the same as madlibsgui.py except:
+    instead of x = input("")
+    it is formatted with a dictionary
+
+#the keys are listed 
+#then program will iterate through keys to get values
+
+the program will then run as normal
